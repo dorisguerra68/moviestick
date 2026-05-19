@@ -1,0 +1,42 @@
+@import url('https://googleapis.com');
+
+
+
+:root{
+  --font-main: 'Kanit', sans-serif;
+  --color-text: #F4F0F5;
+  --color-menú: #1A0033;
+  --color-botton2: #2E0249;
+  --color-botton1: #F642FF;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('../public/imagen/fondomovies.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: var(--font-main);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+.app-container {
+  max-width: 430px;  /* Ancho de un móvil */
+  margin: 0 auto;    /* Esto lo centra en tu monitor de PC */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los hijos al centro */
+}
+h1, h2, h3 {
+  font-family: var(--font-main);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+

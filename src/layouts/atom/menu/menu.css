@@ -1,0 +1,39 @@
+   .menu-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 15px;
+    height: 97px; /* Subimos un poco para que el logo de 65px respire */
+    background-color: var(--color-menú);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.5); 
+    position:relative/* Necesario para el truco del logo */
+}
+
+.logo-main {
+    height: 80px; /* Un pelín más grande como pediste */
+    object-fit: contain;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+    filter: drop-shadow(0px 0px 8px rgba (255, 255, 255,0.3));
+}
+
+.menu-button, .nav-btn-search {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10; /* Para que el logo no tape el clic de los botones */
+}
+
+.menu-icon, .search-icon {
+    width: 30px; /* Bajamos un pelín los iconos para que el logo destaque más */
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
