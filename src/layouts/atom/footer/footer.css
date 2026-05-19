@@ -1,0 +1,40 @@
+.footer-container {
+    position: fixed; /* Lo fija siempre abajo */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--color-menú); /* Usamos el mismo morado */
+    display: flex;
+    justify-content: space-around; /* Reparte los botones equitativamente */
+    align-items: center;
+    border-top-left-radius: 20px; /* Redondeado inverso al menú de arriba */
+    border-top-right-radius: 20px;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.4); /* Sombra hacia arriba */
+    z-index: 1000;
+}
+
+.footer-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+
+.footer-btn:active {
+    transform: scale(0.9); /* Efecto de pulsación al tocarlo */
+}
+
+.footer-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1); /* Los hace blancos como los de arriba */
+    opacity: 0.7; /* Los hace un pelín más discretos */
+    transition: opacity 0.3s;
+}
+
+/* Para resaltar el icono cuando esté "activo" */
+.footer-btn:hover .footer-icon {
+    opacity: 1;
+}
