@@ -1,0 +1,32 @@
+.base-button {
+    border: none;
+    border-radius: 30px; /* Bordes muy redondeados como en tu imagen */
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* Para que el de "Entrar" ocupe el ancho que le des */
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Variante Lila brillante (como el de Entrar y Películas) */
+.primary {
+    background-color: #A020F0; /* Ajusta a tu lila exacto */
+    box-shadow: 0px 4px 15px rgba(160, 32, 240, 0.4);
+}
+
+/* Variante Morado Oscuro (como el de Series) */
+.secondary {
+    background-color: #4B0082; /* Morado más profundo */
+}
+
+/* Efecto de pulsación */
+.base-button:active {
+    transform: scale(0.95);
+    opacity: 0.9;
+}
