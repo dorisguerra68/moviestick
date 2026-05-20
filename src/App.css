@@ -17,7 +17,7 @@
 }
 
 body{
-  background-image: url('/imagen/fondomovies.png'); 
+  background-image: url('./assets/imagen/fondomovies.png'); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

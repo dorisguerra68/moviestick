@@ -1,7 +1,6 @@
 //import React from "react";
 import Menu from "./../components/organisms/menu/menu";
 import Footer from "./../components/organisms/footer/footer";
-import './MainLayout..css';
 import '../App.css';
 
 
