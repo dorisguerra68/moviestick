@@ -3,9 +3,9 @@
 
 
 :root{
-  --font-main: 'Kanit', sans-serif;
+  --font-main: 'Nunito Sans', sans-serif;
   --color-text: #F4F0F5;
-  --color-menú: #1A0033;
+  --color-menu: #1A0033;
   --color-botton2: #2E0249;
   --color-botton1: #F642FF;
 }
@@ -17,26 +17,29 @@
 }
 
 body{
-  background-image: url('../public/imagen/fondomovies.png');
+  background-image: url('/imagen/fondomovies.png'); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-family: var(--font-main);
   color: var(--color-text);
   overflow-x: hidden;
+  background-color: var(--color-botton2);
 }
 
 .app-container {
-  max-width: 430px;  /* Ancho de un móvil */
-  margin: 0 auto;    /* Esto lo centra en tu monitor de PC */
+  max-width: 430px;  
+  margin: 0 auto;    
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center; /* Alinea los hijos al centro */
+  background: rgba(0, 0, 0, 0.3); 
 }
 h1, h2, h3 {
   font-family: var(--font-main);
   font-weight: 600;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
