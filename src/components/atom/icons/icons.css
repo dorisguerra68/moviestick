@@ -1,0 +1,5 @@
+.menu-icon, .search-icon, .logo-main {
+    width: 30px; /* O el tamaño que prefieras */
+    height: auto;
+    display: block;
+}

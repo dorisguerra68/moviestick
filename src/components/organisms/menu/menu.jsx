@@ -1,14 +1,16 @@
-//import React from "react";
+import React from "react";
 import "./menu.css";
 import Icons from "../../atom/icons/icons";
 import  logoImg from "../../../assets/imagen/logoMovieStick.png";
+import menuIcon from "../../../assets/icono/menu.png";
+import searchIcon from "../../../assets/icono/lupa.png";
 
 const Menu = () => {
     return (
         <nav className="menu-container">
     
         <button className="menu-button">   
-            <Icons src="/icono/menu1.png" alt="Abrir Menú" className="menu-icon" />    
+            <Icons src={menuIcon} alt="Abrir Menú" className="menu-icon" />    
         </button>     
 
         <div className="nav-logo">
@@ -17,7 +19,7 @@ const Menu = () => {
 
         
         <button className="nav-btn-search">
-            <Icons src="/icono/lupa.png" alt="Buscar" className="search-icon" />
+            <Icons src={searchIcon} alt="Buscar" className="search-icon" />
         </button>
         </nav>  
     );
