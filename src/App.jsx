@@ -1,28 +1,19 @@
-//import React from 'react';
 import './App.css';
-import Menu from './layouts/atom/menu/menu.jsx'; 
-import Footer from './layouts/atom/footer/footer.jsx';
+import MainLayout from './layouts/MainLayout'; // Importamos tu nuevo layout
 
-  function App() {
-    return (
-      /* Usamos la clase app-container que definimos en el CSS para el fondo y el ancho móvil */
+function App() {
+  return (
+    /* MainLayout ya trae el Menú y el Footer dentro */
+    <MainLayout>
       <div className="app-container">
-        
-      
-        <Menu />
-
-        
-        <main className="content">
-          {/* Carrusel, Filtros, Listado, etc. */}
-        </main>
-
-      <footer>
-        <Footer/>
-      </footer>
-
+        {/* Aquí van mis páginas o el contenido principal */}
+        <section className="content">
+          <h2>Próximamente: Carrusel y Películas</h2>
+          {/* Aquí llamo a la servicio de API más adelante */}
+        </section>
       </div>
-      
-    );
-  }
+    </MainLayout>
+  );
+}
 
-  export default App;
+export default App;
