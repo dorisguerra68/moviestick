@@ -1,15 +1,23 @@
 import './App.css';
-import MainLayout from './layouts/MainLayout'; // Importamos tu nuevo layout
+import MainLayout from './layouts/MainLayout'; 
+import { useEffect } from 'react'; 
+import { fetchPopularMovies } from './api/movieServi'; 
 
 function App() {
+  // useEffect es obligatorio para que la función se ejecute al cargar
+  useEffect(() => {
+    const getData = async () => {
+      const movies = await fetchPopularMovies();
+      console.log("Películas recibidas: ", movies);
+    };
+    getData();
+  }, []); // El array vacío indica que solo se ejecute una vez
+  
   return (
-    /* MainLayout ya trae el Menú y el Footer dentro */
     <MainLayout>
       <div className="app-container">
-        {/* Aquí van mis páginas o el contenido principal */}
         <section className="content">
           <h2>Próximamente: Carrusel y Películas</h2>
-          {/* Aquí llamo a la servicio de API más adelante */}
         </section>
       </div>
     </MainLayout>
@@ -17,3 +25,4 @@ function App() {
 }
 
 export default App;
+
