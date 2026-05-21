@@ -10,7 +10,7 @@ import '../App.css';
         <Menu />
         
         <main className="content-area">
-            {children} {/* Aquí aparecerá el Home, Explorer, etc. */}
+            {children} 
         </main>
 
         <Footer />
