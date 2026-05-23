@@ -1,4 +1,3 @@
-    //
     import React, { useState, useEffect } from "react";
     import Slider from "react-slick";
     import axios from "axios";
@@ -7,7 +6,7 @@
     import "slick-carousel/slick/slick-theme.css";
 
     import arrowLeft from "../../../assets/icono/flecha-izquierda.png";
-    import arrowRight from "../../../assets/icono/flecha-derecha .png";
+    import arrowRight from "../../../assets/icono/flecha-derecha.png";
 
     // Flechas del carrusel
     const NextArrow = ({ onClick }) => (
@@ -23,19 +22,20 @@
 
     const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
-    useEffect(() => {
-        const getData = async () => {
-        try {
-            const { data } = await axios.get(
-            "https://api.themoviedb.org/3/movie/popular",
-            {
-                params: {
-                api_key: API_KEY,
-                language: "es-ES",
-                page: 1,
-                },
-            }
-            );
+        useEffect(() => {
+            const getData = async () => {
+            try {
+                const { data } = await axios.get(
+                "https://api.themoviedb.org/3/movie/popular",
+                {
+                    params: {
+                    api_key: API_KEY,
+                    language: "es-ES",
+                    page: 1,
+                    },
+                }
+                );
+                
 
 
             const topTen = data.results.slice(0, 10);
@@ -46,7 +46,9 @@
         };
 
         getData();
-    }, []);
+
+    }, [API_KEY]);
+
 
     const settings = {
         infinite: true,
@@ -76,5 +78,7 @@
         </div>
     );
     };
+    
+
 
     export default MovieCarousel;

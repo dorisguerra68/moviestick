@@ -1,7 +1,6 @@
     import "./Home.css";
     import { useNavigate } from "react-router-dom";
-    import ButtonCircular from "../../components/ui/ButtonCircular/ButtonCircular.jsx";
-    import Button from "../../components/ui/Button/Button.jsx";
+    import Button from "../../components/atom/button/button.jsx";
 
     const Home = () => {
     const navigate = useNavigate();
@@ -9,26 +8,20 @@
     return (
         <div className="home-container">
 
-        {/* Logo */}
+        {/* Logo centrado */}
         <div className="home-logo">
-            <img src="/logo-moviestick.png" alt="MovieStick" />
+            <img src="/src/assets/imagen/logoMovieStick.png" alt="MovieStick" />
         </div>
 
-        {/* Botón circular centrado debajo del logo */}
-        <div className="home-center-button">
-            <ButtonCircular 
-            icon="☰"
-            variant="ghost"
-            onClick={() => navigate("/explore")}   // ← AQUÍ NAVEGA
+
+        {/* Botón rectangular */}
+        <div className="home-enter-button">
+            <Button 
+            text="Entrar"
+            variant="primary"
+            onClick={() => navigate("/explore")}
             />
         </div>
-
-        {/* Botón rectangular Entrar */}
-        <Button 
-            text="Entrar" 
-            variant="primary"
-            onClick={() => navigate("/explore")}     // ← TAMBIÉN NAVEGA
-        />
 
         </div>
     );

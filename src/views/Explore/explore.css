@@ -1,0 +1,21 @@
+    .explore-page {
+    width: 100%;
+    padding: 20px 0;
+    }
+
+    .explore-page h2 {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    }
+
+    .explore-section {
+    margin-bottom: 40px;
+    }
+
+    /* Si algún día quieres un grid propio para Explore, lo activas aquí */
+    .explore-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }

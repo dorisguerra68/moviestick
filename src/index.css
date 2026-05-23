@@ -1,1 +1,10 @@
+        html, body {
+    background-image: url('/assets/imagen/fondomovies.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    }
 
