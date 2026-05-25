@@ -30,3 +30,18 @@
     transform: scale(0.95);
     opacity: 0.9;
 }
+
+.base-button:focus {
+    outline: none;
+}
+.base-button:hover {
+    box-shadow: 0px 6px 20px rgba(160, 32, 240, 0.6);
+}
+
+@media (max-width: 768px) {
+    .base-button {
+        max-width: 100%;
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+}

@@ -1,1 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Concert+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Paprika&family=Sniglet&display=swap');
+                   
+                *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
 
+            body {
+                    background-image: url("/public/fondomovies.png");
+                    background-size: cover;
+                    background-position: center;
+                    background-attachment: fixed;
+                    min-height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    }
+
+
+
+            :root{
+            --font-main: 'Weight', sans-serif;
+            --color-text: #F4F0F5;
+            --color-menu: #1A0033;
+            --color-botton2: #2E0249;
+            --color-botton1: #F642FF;
+            }
+
+            
+            h1, h2, h3 {
+            font-family: var(--font-main);
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            }
+        
+            @media (max-width: 480px) {
+                body {
+                background-image: url("/public/fondomovies.png");  
+                    font-size: 14px;
+                    height: auto;
+                }
+            }
+            
+            @media  (max-width:768px) {
+                body {
+                    background-image: url("/public/fondomovies.png");
+                    font-size: 16px;
+                    height: auto;
+                }
+            }
+            
+            @media (max-width: 1440px) {
+                body {
+                   background-image: url("/public/fondomovies.png");
+                    font-size: 18px;
+                    height: auto;
+                }
+            }
+                
+                

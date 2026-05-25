@@ -1,0 +1,82 @@
+.card-cartelera-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    padding: 10px;
+}
+
+.card-link {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+.card-cartelera {
+    /* El 0.6 es el nivel de transparencia (va de 0 a 1) */
+    background: rgba(45, 27, 77, 0.6); 
+    backdrop-filter: blur(5px); /* Efecto cristal para que se vea elegante */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Un borde sutil para definir la forma */
+    transition: transform 0.3s ease;
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    /* Quitamos el border-radius de la imagen para que encaje arriba */
+    border-radius: 10px 10px 0 0; 
+}
+
+.card-title {
+    font-size: 0.9rem;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    
+    /* Truncado de texto */
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+    /* Ajuste de altura */
+    min-height: 3em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* Un toque más oscuro para que el texto resalte */
+    padding: 12px 5px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Efecto al tocar/hover */
+.card-cartelera:hover .card-title {
+    -webkit-line-clamp: unset; /* Muestra todo el texto */
+    overflow: visible;
+    background: var(--color-botton2);
+    /* Asegura las curvas inferiores */
+    border-radius: 0 0 15px 15px; 
+    .card-cartelera:hover {
+    background: rgba(60, 35, 100, 0.8); /* Se vuelve más sólido al pasar el mouse */
+    transform: translateY(-5px); /* Pequeño salto hacia arriba */
+}
+}
+
+/* Medias queries corregidas */
+@media (min-width: 768px) {
+    .card-cartelera-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-cartelera-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

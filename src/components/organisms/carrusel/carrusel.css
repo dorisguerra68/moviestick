@@ -1,0 +1,44 @@
+        .flecha-carrusel {
+        width: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /* Centrado vertical */
+        cursor: pointer;
+        z-index: 10;
+        transition: transform 0.2s ease; /* Opcional: para que se mueva suave */
+        }
+
+    
+        .flecha-derecha {
+        right: -50px;
+        }
+
+        .flecha-izquierda {
+        left: -50px;
+        }
+  
+    .movie-slide {
+    padding: 0 8px; /* Espacio entre los posters */
+    outline: none;
+    }
+
+    
+    .movie-poster {
+    width: 100%;
+    border-radius: 20px; /* Bordes muy redondeados como en tu imagen */
+    display: block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra suave para dar profundidad */
+    transition: transform 0.3s ease;
+    }
+
+    
+    .movie-poster:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    }
+    .carousel-wrapper {
+  position: relative; /* Necesario para que las flechas se ubiquen bien */
+  width: 90%;         /* Deja espacio a los lados para las flechas */
+  margin: 0 auto;     /* Centra el carrusel en la pantalla */
+  padding: 20px 0;    /* Espacio arriba y abajo */
+}

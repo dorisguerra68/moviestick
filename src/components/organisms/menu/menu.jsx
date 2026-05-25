@@ -1,5 +1,4 @@
-import React from "react";
-import "./menu.css";
+//mport "./menu.css";
 import Icons from "../../atom/icons/icons";
 import  logoImg from "../../../assets/imagen/logoMovieStick.png";
 import menuIcon from "../../../assets/icono/menu.png";
@@ -9,8 +8,8 @@ const Menu = () => {
     return (
         <nav className="menu-container">
     
-        <button className="menu-button">   
-            <Icons src={menuIcon} alt="Abrir Menú" className="menu-icon" />    
+        <button className="menu-button" aria-label="Abrir menú"> 
+            <Icons src={menuIcon} alt="Abrir Menú" className= "icon" className="menu-icon" />    
         </button>     
 
         <div className="nav-logo">
@@ -18,8 +17,8 @@ const Menu = () => {
         </div>
 
         
-        <button className="nav-btn-search">
-            <Icons src={searchIcon} alt="Buscar" className="search-icon" />
+        <button className="nav-btn-search" aria-label="Buscar">
+            <Icons src={searchIcon} alt="Buscar" className= "icon" className="search-icon" />
         </button>
         </nav>  
     );

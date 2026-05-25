@@ -1,0 +1,39 @@
+    .explore-page {
+    width: 100%;
+    padding: 20px 0;
+    }
+
+    .explore-page h2 {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    }
+
+    .explore-section {
+    margin-bottom: 80px;
+    }
+
+    /* Si algún día quieres un grid propio para Explore, lo activas aquí */
+    .explore-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+@media (max-width: 480px){
+        .explore-page h2 {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    }
+
+    .explore-section {
+    margin-bottom: 60px;
+    }
+
+    @media  (max-width:768px)  {
+    .explore-page h2 {
+    font-size: 1.7rem;
+    margin-left: 15px;
+    }
+
+    .explore-section {
+    margin-bottom: 60px;} } }

@@ -1,0 +1,81 @@
+        .home-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, #3b0a6a, #1a0033);
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        }
+
+   
+    .home-center-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+    /* Efecto de iluminación llamativa */
+    .home-center-button .primary {
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.45),
+                0 0 28px rgba(160, 32, 240, 0.55);
+    animation: pulseGlow 2.2s infinite ease-in-out;
+    }
+
+    /* Animación suave de brillo */
+    @keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 18px rgba(255, 255, 255, 0.45),
+                    0 0 28px rgba(160, 32, 240, 0.55);
+    }
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.6),
+                    0 0 40px rgba(160, 32, 240, 0.75);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 18px rgba(255, 255, 255, 0.45),
+                    0 0 28px rgba(160, 32, 240, 0.55);
+    }
+    }
+
+
+
+
+        .home-logo img {
+        width: 240px;
+        height: auto;
+        margin-bottom: 50px;
+        filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+        }
+
+        /* ----------------------------- */
+        /* BOTÓN ENTRAR (RECTANGULAR EN PC) */
+        /* ----------------------------- */
+
+        .primary {
+        border-radius: 14px; /* rectangular suave */
+        max-width: 220px;
+        padding: 14px 40px;
+        }
+
+        /* ----------------------------- */
+        /* BOTÓN ENTRAR (REDONDO EN MÓVIL) */
+        /* ----------------------------- */
+
+        @media (max-width: 768px) {
+        .primary {
+            border-radius: 50px; /* redondo */
+            max-width: 160px;
+            padding: 14px 20px;
+        }
+
+        .home-logo img {
+            width: 180px;
+        }
+        }

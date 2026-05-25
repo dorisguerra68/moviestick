@@ -1,0 +1,52 @@
+    .circular-button {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px; /* Para iconos */
+    transition: 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    /* Variante principal (lila brillante) */
+    .primary {
+    background-color: #A020F0;
+    color: white;
+    }
+
+    /* Variante secundaria (morado oscuro) */
+    .secondary {
+    background-color: #4B0082;
+    color: white;
+    }
+
+    /* Variante ghost (transparente) */
+    .ghost {
+    background-color: rgba(255,255,255,0.15);
+    color: white;
+    backdrop-filter: blur(4px);
+    }
+
+    /* Hover */
+    .circular-button:hover {
+    transform: scale(1.08);
+    }
+
+    /* Active */
+    .circular-button:active {
+    transform: scale(0.92);
+    opacity: 0.9;
+    }
+
+    /* Móvil */
+    @media (max-width: 768px) {
+    .circular-button {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+    }
