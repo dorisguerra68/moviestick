@@ -17,8 +17,11 @@ const BASE_URL = 'https://api.themoviedb.org/3';
         return response.data.results;
         
     } catch (error) {
-        // Axios captura errores de red y de códigos de estado (401, 404, etc.)
+        // Axios me reconoce los  errores de red y de códigos de estado (401, 404, etc.)
         console.error("Error con Axios:", error.response?.data || error.message);
         return [];
     }
+
 };
+
+ console.log("API KEY:", import.meta.env.VITE_TMDB_API_KEY);

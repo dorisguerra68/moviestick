@@ -1,0 +1,42 @@
+    .card-cartelera-container {
+    display: grid;
+    /* Crea 2 columnas iguales en móvil */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    padding: 10px;
+    background-color: #2d1b4d;
+    }
+
+    .card-cartelera {
+    background: #1a0f2e;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .card-image {
+    width: 100%;
+    aspect-ratio: 2 / 3; /* Mantiene el formato de póster */
+    object-fit: cover;
+    }
+
+    .card-title {
+    font-size: 0.9rem; /* Texto más pequeño para móvil */
+    padding: 8px;
+    color: white;
+    text-align: center;
+    }
+
+    /* Para pantallas más grandes (Tablets/PC) */
+    @media (min-width: 768px) {
+    .card-cartelera-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+    }
+    @media (min-width: 1024px) {
+    .card-cartelera-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    }   
+    
