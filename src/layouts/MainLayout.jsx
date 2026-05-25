@@ -1,25 +1,25 @@
-    import React from 'react';
-    import Menu from "./../components/organisms/menu/menu";
-    import Footer from "./../components/organisms/footer/footer";
+        import React from 'react';
+        import Menu from "./../components/organisms/menu/menu";
+        import Footer from "./../components/organisms/footer/footer";
 
-    import "../App.css";
+        import "../App.css";
 
-    const MainLayout = ({ children }) => {
-    return (
-        <div className="layout-wrapper">
+        const MainLayout = ({ children }) => {
+        return (
+            <div className="layout-wrapper">
 
-        {/* Menú superior */}
-       
+            {/* Menú superior */}
+         
 
-        {/* Contenido dinámico (Home, Explore, MovieInfo...) */}
-        <main className="content-area">
-            {children}
-        </main>
+            {/* Contenido dinámico (Home, Explore, MovieInfo...) */}
+            <main className="content-area">
+                {children}
+            </main>
 
-        {/* Footer */}
-      
-        </div>
-    );
-    };
+            {/* Footer */}
+          
+            </div>
+        );
+        };
 
-    export default MainLayout;
+        export default MainLayout;

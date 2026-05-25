@@ -19,7 +19,7 @@
     }
 
     /* Efecto de iluminación llamativa */
-    .home-center-button .circular-button {
+    .home-center-button .primary {
     box-shadow: 0 0 18px rgba(255, 255, 255, 0.45),
                 0 0 28px rgba(160, 32, 240, 0.55);
     animation: pulseGlow 2.2s infinite ease-in-out;
@@ -49,6 +49,7 @@
 
         .home-logo img {
         width: 240px;
+        height: auto;
         margin-bottom: 50px;
         filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
         }

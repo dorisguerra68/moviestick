@@ -9,7 +9,7 @@ const Menu = () => {
         <nav className="menu-container">
     
         <button className="menu-button" aria-label="Abrir menú"> 
-            <Icons src={menuIcon} alt="Abrir Menú" className="menu-icon" />    
+            <Icons src={menuIcon} alt="Abrir Menú" className= "icon" className="menu-icon" />    
         </button>     
 
         <div className="nav-logo">
@@ -18,7 +18,7 @@ const Menu = () => {
 
         
         <button className="nav-btn-search" aria-label="Buscar">
-            <Icons src={searchIcon} alt="Buscar" className="search-icon" />
+            <Icons src={searchIcon} alt="Buscar" className= "icon" className="search-icon" />
         </button>
         </nav>  
     );

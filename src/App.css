@@ -1,35 +1,9 @@
-@import url('https://googleapis.com');
-
-
-
-:root{
-  --font-main: 'Nunito Sans', sans-serif;
-  --color-text: #F4F0F5;
-  --color-menu: #1A0033;
-  --color-botton2: #2E0249;
-  --color-botton1: #F642FF;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 .app-container {
-  max-width: 430px;  
-  margin: 0 auto;    
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Alinea los hijos al centro */
-  background: rgba(0, 0, 0, 0.3); 
-}
-h1, h2, h3 {
-  font-family: var(--font-main);
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
+        max-width: 430px;  
+        margin: 0 auto;    
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinea los hijos al centro */
+        background: rgba(0, 0, 0, 0.3); 
+        }

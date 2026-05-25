@@ -10,7 +10,7 @@
     }
 
     .explore-section {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     }
 
     /* Si algún día quieres un grid propio para Explore, lo activas aquí */
@@ -19,3 +19,21 @@
     flex-direction: column;
     gap: 20px;
     }
+@media (max-width: 480px){
+        .explore-page h2 {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    }
+
+    .explore-section {
+    margin-bottom: 60px;
+    }
+
+    @media  (max-width:768px)  {
+    .explore-page h2 {
+    font-size: 1.7rem;
+    margin-left: 15px;
+    }
+
+    .explore-section {
+    margin-bottom: 60px;} } }
