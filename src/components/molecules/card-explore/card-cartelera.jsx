@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import './card-cartelera.css';
 
 import { Link } from 'react-router-dom';
