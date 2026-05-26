@@ -1,39 +1,72 @@
     .explore-page {
     width: 100%;
     padding: 20px 0;
-    }
+    color: var(--color-text)
+;    }
 
     .explore-page h2 {
-    font-size: 1.8rem;
+    font: size 1.5rem;
+    text-align:center;
+    font-weight:600;
     margin-left: 20px;
     margin-bottom: 10px;
+    color: var(--color-text);
     }
 
     .explore-section {
     margin-bottom: 80px;
     }
 
-    /* Si algún día quieres un grid propio para Explore, lo activas aquí */
+    
     .explore-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 20px;
+    padding: 20px;
     }
+
+    /*móvil*/
 @media (max-width: 480px){
         .explore-page h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 15px;
     }
 
     .explore-section {
     margin-bottom: 60px;
     }
+    
 
-    @media  (max-width:768px)  {
-    .explore-page h2 {
-    font-size: 1.7rem;
-    margin-left: 15px;
+    .explore-grid {
+        grid-template-columns: reapeat(2,1fr);
     }
 
-    .explore-section {
-    margin-bottom: 60px;} } }
+}
+/* MÓVIL / TABLET: 2 columnas también */
+@media (min-width: 481px) and (max-width: 768px) {
+.explore-page h2 {
+    font-size: 1.7rem;
+    margin-left: 15px;
+}
+
+.explore-section {
+    margin-bottom: 60px;
+}
+
+.explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/*ordenador normal*/
+@media (min-width: 769px) and (max-width: 1439px) {
+.explore-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+/* ORDENADOR GRANDE */
+@media (min-width: 1440px) {
+.explore-grid {
+    grid-template-columns: repeat(6, 1fr);
+}
+}

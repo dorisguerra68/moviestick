@@ -1,0 +1,99 @@
+    .information-card-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+    }
+
+    /* Información a la izquierda */
+    .movie-info {
+    flex: 1;
+    }
+
+    /* Poster a la derecha */
+    .movie-poster {
+    width: 250px;
+    border-radius: 10px;
+    }
+
+    /* Actores */
+    .actors-list {
+    margin-top: 20px;
+    padding-left: 20px;
+    }
+
+    .actors-list li {
+    margin-bottom: 5px;
+    }
+
+    /* Director */
+    .director-box {
+    margin-top: 20px;
+    font-weight: bold;
+    }
+
+    /* Responsive para móvil */
+    @media (max-width: 768px) {
+    .information-card-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .movie-poster {
+        width: 80%;
+    }
+
+    .movie-info {
+        text-align: left;
+        width: 100%;
+    }
+    }
+
+    /* --- MÓVIL (≤ 768px) --- */
+    @media (max-width: 768px) {
+    .information-card-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .movie-poster {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .movie-info {
+        text-align: left;
+        width: 100%;
+    }
+
+    .actors-list {
+        padding-left: 10px;
+    }
+    }
+
+
+    /* --- PANTALLAS GRANDES (≥ 1440px) --- */
+    @media (min-width: 1440px) {
+    .information-card-container {
+        padding: 60px 120px;
+        gap: 60px;
+    }
+
+    .movie-poster {
+        width: 350px;
+    }
+
+    .movie-info h1 {
+        font-size: 2.4rem;
+    }
+
+    .movie-info p {
+        font-size: 1.2rem;
+    }
+
+    .actors-list li {
+        font-size: 1.1rem;
+    }
+    }   

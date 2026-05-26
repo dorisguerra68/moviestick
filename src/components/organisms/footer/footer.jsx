@@ -1,4 +1,4 @@
-//import React from 'react';
+import React from 'react';
 import './footer.css';
 import Icons from "../../atom/icons/icons";
 import HomeIcon from "../../../assets/icono/casa.png";
