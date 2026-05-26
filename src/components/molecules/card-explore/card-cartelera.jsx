@@ -1,17 +1,23 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import './card-cartelera.css';
 
-const MovieCard = ({ title, image }) => {  
+import { Link } from 'react-router-dom';
+
+const MovieCard = ({ id, title, image }) => {  
     const imageUrl = `https://image.tmdb.org/t/p/w342${image}`;
+
     return (
-        <div className="card-cartelera">
-            <img src={imageUrl} alt={title} className="card-image" />
-            <div className="card-content">
-                <h3 className="card-title">{title}</h3>
+        <Link to={`/movie/${id}`} className="card-link">
+            <div className="card-cartelera">
+                <img src={imageUrl} alt={title} className="card-image" />
+                <div className="card-content">
+                    <h3 className="card-title">{title}</h3>
+                </div>
             </div>
-        </div>
+        </Link>
     );
 };
+
 
 const ExploreMovie = () => {   
     const [movies, setMovies] = useState([]); 
@@ -40,7 +46,7 @@ const ExploreMovie = () => {
         }, [page, API_KEY]);
 
         useEffect(() => {
-            fetchMovies();
+        fetchMovies();
         }, [fetchMovies]);
 
     useEffect(() => {

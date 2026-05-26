@@ -1,0 +1,25 @@
+h1{
+    padding: 20px;
+    margin: 20px;
+    font-size: 3rem;
+    color: var(--color-text)
+        
+}
+
+h3,p, li{
+    padding: 20px;
+    margin: 20px;
+    font-size: 2rem;
+    color: var(--color-text)
+    
+}
+
+.movie-card-img, img{
+    width: 500px;
+    height: auto;
+    border:5px solid var(--color-text);
+    border-radius: 20pX;
+
+
+}
+
