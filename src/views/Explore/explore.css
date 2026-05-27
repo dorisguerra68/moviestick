@@ -1,0 +1,87 @@
+    .explore-page {
+    width: 100%;
+    padding: 20px 0;
+    color: var(--color-text);
+    height: 100%;
+    overflow-y: auto;
+}
+    .title-primary{
+        font-size: 3.5rem !important;
+        text-align:center;  
+        margin:20px 0;
+        padding: 0 20px;
+        font-weight: bold;
+    }
+
+    .explore-page h2 {
+    font-size: 1rem;
+    text-align:center;
+    font-weight:300;
+    margin: 0 auto 10px auto;
+    color: var(--color-text);
+    }
+
+    .explore-section {
+    margin-bottom: 80px;
+    }
+
+    
+    .explore-grid {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    }
+
+    /*móvil*/
+@media (max-width: 450px){
+    .title-primary{
+        font-size: 2rem !important;
+        margin: 10px 0;
+    }
+
+    .explore-page h2 {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    }
+
+    .explore-section {
+    margin-bottom: 60px;
+    }
+    
+
+    .explore-grid {
+        grid-template-columns: reapeat(2, 1fr);
+    }
+
+}
+
+/*  Tablet y laptop */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.explore-page h2 {
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+
+.explore-section {
+    margin-bottom: 60px;
+}
+
+.explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+/* ORDENADOR GRANDE */
+@media (min-width: 1440px) {
+ .explore-grid {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.explore-page h2 {
+    font-size: 1.2rem;
+}
+}

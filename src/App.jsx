@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout.jsx";
 import Home from "./views/Home/home.jsx";
 import Explore from "./views/Explore/explore.jsx";
-import MovieInfo from "./views/MovieInfo/MovieInfo.jsx";
+import InformationCard from "./components/molecules/information-card/information-card.jsx"; 
+import './App.css';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
-          <Route path="/movie/:id" element={<MovieInfo />} />
+
+          {/* Ruta dinámica para ver la información de una película */}
+          <Route path="/movie/:id" element={<InformationCard />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

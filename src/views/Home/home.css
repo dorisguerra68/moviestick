@@ -1,25 +1,44 @@
-        .home-container {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(180deg, #3b0a6a, #1a0033);
-        text-align: center;
-        padding: 20px;
-        position: relative;
-        }
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/fondomovies.png"); 
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    }
 
-    /* Contenedor del botón circular debajo del logo */
+.home-logo img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 4px 10px rgba(11, 11, 11, 0.3));
+    z-index: 2;
+}
+
+
+
     .home-center-button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     width: 100%;
+    z-index: 2;
+    }
+
+    .primary {
+    border-radius: 16px; 
+    max-width: 400px;   
+    padding: 14px 40px;
+    justify-content: center;
+    align-items: center;
     }
 
     /* Efecto de iluminación llamativa */
-    .home-center-button .circular-button {
+    .home-center-button .primary {
     box-shadow: 0 0 18px rgba(255, 255, 255, 0.45),
                 0 0 28px rgba(160, 32, 240, 0.55);
     animation: pulseGlow 2.2s infinite ease-in-out;
@@ -44,37 +63,59 @@
     }
     }
 
-
-
-
-        .home-logo img {
-        width: 240px;
-        margin-bottom: 50px;
-        filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
-        }
-
         /* ----------------------------- */
-        /* BOTÓN ENTRAR (RECTANGULAR EN PC) */
+        /*  ( EN MÓVIL) */
         /* ----------------------------- */
 
-        .primary {
-        border-radius: 14px; /* rectangular suave */
-        max-width: 220px;
-        padding: 14px 40px;
-        }
+    @media (max-width: 450px) {
+.home-logo img {
+    width: 160px;
+}
 
-        /* ----------------------------- */
-        /* BOTÓN ENTRAR (REDONDO EN MÓVIL) */
-        /* ----------------------------- */
+.primary {
+    border-radius: 50px;
+    max-width: 160px;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+ 
 
-        @media (max-width: 768px) {
-        .primary {
-            border-radius: 50px; /* redondo */
-            max-width: 160px;
-            padding: 14px 20px;
-        }
+.home-container {
+    padding: 10px;
+}
+}
 
-        .home-logo img {
-            width: 180px;
-        }
-        }
+ /* ----------------------------- */
+        /* PANTALLA MEDIANAS */
+/* ----------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+.home-logo img {
+    width: 320px;
+}
+
+.primary {
+    max-width: 250px;
+    padding: 16px 40px;
+    font-size: 18px;
+}
+}
+
+/* ----------------------------- */
+        /* PANTALLA GRANDES */
+/* ----------------------------- */
+@media (min-width: 1440px) {
+.home-logo img {
+    width: 420px;
+}
+
+.primary {
+    max-width: 420px;
+    padding: 18px 50px;
+    font-size: 20px;
+}
+
+.home-container {
+    padding: 40px;
+}
+}
+
