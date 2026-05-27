@@ -11,7 +11,7 @@ const MovieCard = ({ id, title, image }) => {
             <div className="card-cartelera">
                 <img src={imageUrl} alt={title} className="card-image" />
                 <div className="card-content">
-                    <h3 className="card-title">{title}</h3>
+                    <h4 className="card-title">{title}</h4>
                 </div>
             </div>
         </Link>

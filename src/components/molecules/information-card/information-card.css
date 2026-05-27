@@ -1,99 +1,61 @@
-    .information-card-container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    color: white;
-    }
+    .movie-info-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+  width: 100%;
+}
 
-    /* Información a la izquierda */
-    .movie-info {
-    flex: 1;
-    }
+.movie-info-poster {
+  margin: 20px;
+  padding: 10px;
+  width: 550px;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(255, 254, 254, 0.4);
+}
 
-    /* Poster a la derecha */
-    .movie-poster {
-    width: 250px;
-    border-radius: 10px;
-    }
+.movie-info-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ffffff;
+  justyfy-content: center;
+}
 
-    /* Actores */
-    .actors-list {
-    margin-top: 20px;
-    padding-left: 20px;
-    }
+.movie-info-title {
+ 
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
 
-    .actors-list li {
-    margin-bottom: 5px;
-    }
+.movie-info-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #ffffff;
+  opacity: 0.95;
+}
 
-    /* Director */
-    .director-box {
-    margin-top: 20px;
-    font-weight: bold;
-    }
+.movie-info-extra {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
 
-    /* Responsive para móvil */
-    @media (max-width: 768px) {
-    .information-card-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+@media (max-width: 768px) {
+  .movie-info-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .movie-poster {
-        width: 80%;
-    }
+  .movie-info-poster {
+    width: 80%;
+  }
 
-    .movie-info {
-        text-align: left;
-        width: 100%;
-    }
-    }
-
-    /* --- MÓVIL (≤ 768px) --- */
-    @media (max-width: 768px) {
-    .information-card-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .movie-poster {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .movie-info {
-        text-align: left;
-        width: 100%;
-    }
-
-    .actors-list {
-        padding-left: 10px;
-    }
-    }
-
-
-    /* --- PANTALLAS GRANDES (≥ 1440px) --- */
-    @media (min-width: 1440px) {
-    .information-card-container {
-        padding: 60px 120px;
-        gap: 60px;
-    }
-
-    .movie-poster {
-        width: 350px;
-    }
-
-    .movie-info h1 {
-        font-size: 2.4rem;
-    }
-
-    .movie-info p {
-        font-size: 1.2rem;
-    }
-
-    .actors-list li {
-        font-size: 1.1rem;
-    }
-    }   
+  .movie-info-details {
+    align-items: center;
+  }
+}
