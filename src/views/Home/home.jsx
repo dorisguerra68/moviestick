@@ -8,13 +8,13 @@
     return (
         <div className="home-container">
 
-        {/* Logo centrado */}
+      
         <div className="home-logo">
-            <img src="/src/assets/imagen/logoMovieStick.png" alt="MovieStick" />
+            <img src="/src/assets/imagen/logoMovieStick.png" alt="Logo MovieStick" />
         </div>
 
 
-        {/* Botón rectangular */}
+       
         <div className="home-enter-button">
             <Button 
             text="Entrar"

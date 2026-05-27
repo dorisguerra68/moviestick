@@ -1,6 +1,5 @@
         import React from 'react';
-        import Menu from "./../components/organisms/menu/menu";
-        import Footer from "./../components/organisms/footer/footer";
+    
 
         import "../App.css";
 
@@ -9,7 +8,7 @@
             <div className="layout-wrapper">
 
             {/* Menú superior */}
-         
+            
 
             {/* Contenido dinámico (Home, Explore, MovieInfo...) */}
             <main className="content-area">
@@ -17,7 +16,8 @@
             </main>
 
             {/* Footer */}
-          
+        
+        
             </div>
         );
         };

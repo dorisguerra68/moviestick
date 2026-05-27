@@ -9,13 +9,20 @@
         padding: 20px;
         position: relative;
         }
+        .home-logo img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+}
 
-   
+
+
     .home-center-button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    
     }
 
     /* Efecto de iluminación llamativa */
@@ -47,28 +54,28 @@
 
 
 
-        .home-logo img {
-        width: 240px;
+        .home-logo  {
+        width:400px;
         height: auto;
         margin-bottom: 50px;
         filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
         }
 
-        /* ----------------------------- */
-        /* BOTÓN ENTRAR (RECTANGULAR EN PC) */
-        /* ----------------------------- */
+       
 
         .primary {
         border-radius: 14px; /* rectangular suave */
-        max-width: 220px;
+        max-width: 400px;
         padding: 14px 40px;
+        justify-content: center;
+        align-items: center;
         }
 
         /* ----------------------------- */
         /* BOTÓN ENTRAR (REDONDO EN MÓVIL) */
         /* ----------------------------- */
 
-        @media (max-width: 768px) {
+        @media (  max-width: 450px) {
         .primary {
             border-radius: 50px; /* redondo */
             max-width: 160px;
