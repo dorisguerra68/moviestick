@@ -7,9 +7,10 @@ return (
     <div className="explore-page">
 
     <section className="explore-section">
-        <h2 class="title-primary">LAS PELÍCULAS MÁS POPULARES</h2>
-       
+        <h2 className="title-primary">LAS PELÍCULAS MÁS POPULARES</h2>  
+        <carrusel />
     </section>
+    
 
       {/* Aquí se muestran las películas */}
     <ExploreMovie />

@@ -1,6 +1,7 @@
         import "./home.css";
         import { useNavigate } from "react-router-dom";
         import Button from "../../components/atom/button/button.jsx";
+        import logo from "../../assets/imagen/logoMovieStick.png";
 
         const Home = () => {
         const navigate = useNavigate();
@@ -10,7 +11,7 @@
 
         
             <div className="home-logo">
-                <img src="/src/assets/imagen/logoMovieStick.png" alt="Logo MovieStick" />
+                <img src={logo} alt="Logo MovieStick" />
             </div>
 
 

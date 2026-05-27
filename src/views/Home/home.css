@@ -1,21 +1,22 @@
-        .home-container {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url("/public/fondomovies.png"); 
-        background-size: cover;
-        text-align: center;
-        padding: 20px;
-        position: relative;
-        }
-        .home-logo img {
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/fondomovies.png"); 
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    }
+
+.home-logo img {
     width: 400px;
     height: auto;
-    background: rgba(21, 15, 111, 0.3);
     margin-bottom: 40px;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+    filter: drop-shadow(0 4px 10px rgba(11, 11, 11, 0.3));
+    z-index: 2;
 }
 
 
@@ -25,7 +26,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    
+    z-index: 2;
     }
 
     .primary {
@@ -62,38 +63,59 @@
     }
     }
 
-
-
-
-        .home-logo  {
-        width:400px;
-        height: auto;
-        margin-bottom: 50px;
-        filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
-        }
-
-       
-
-        .primary {
-        border-radius: 14px; /* rectangular suave */
-        max-width: 400px;
-        padding: 14px 40px;
-        justify-content: center;
-        align-items: center;
-        }
-
         /* ----------------------------- */
-        /* BOTÓN ENTRAR (REDONDO EN MÓVIL) */
+        /*  ( EN MÓVIL) */
         /* ----------------------------- */
 
-        @media (  max-width: 450px) {
-        .primary {
-            border-radius: 50px; /* redondo */
-            max-width: 160px;
-            padding: 14px 20px;
-        }
+    @media (max-width: 450px) {
+.home-logo img {
+    width: 160px;
+}
 
-        .home-logo img {
-            width: 180px;
-        }
-        }
+.primary {
+    border-radius: 50px;
+    max-width: 160px;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+ 
+
+.home-container {
+    padding: 10px;
+}
+}
+
+ /* ----------------------------- */
+        /* PANTALLA MEDIANAS */
+/* ----------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+.home-logo img {
+    width: 320px;
+}
+
+.primary {
+    max-width: 250px;
+    padding: 16px 40px;
+    font-size: 18px;
+}
+}
+
+/* ----------------------------- */
+        /* PANTALLA GRANDES */
+/* ----------------------------- */
+@media (min-width: 1440px) {
+.home-logo img {
+    width: 420px;
+}
+
+.primary {
+    max-width: 420px;
+    padding: 18px 50px;
+    font-size: 20px;
+}
+
+.home-container {
+    padding: 40px;
+}
+}
+

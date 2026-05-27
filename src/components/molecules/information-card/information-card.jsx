@@ -18,10 +18,10 @@ function InformationCard() {
     let edad = hoy.getFullYear() - nacimiento.getFullYear();
     const mes = hoy.getMonth() - nacimiento.getMonth();
     if (mes < 0 || (mes === 0 && hoy.getDate() < nacimiento.getDate())) {
-      edad--;
+    edad--;
     }
     return edad;
-  }
+}
 
   // Obtener información general de la película + créditos
   useEffect(() => {
