@@ -1,4 +1,4 @@
-    import "./Home.css";
+    import "./home.css";
     import { useNavigate } from "react-router-dom";
     import Button from "../../components/atom/button/button.jsx";
 
