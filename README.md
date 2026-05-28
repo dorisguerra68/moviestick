@@ -57,12 +57,21 @@ El error 905 se produjo porque la petición enviaba parámetros incorrectos o va
 
 ---
 
-## 🛠️ Instalación y ejecución
+## 📥 Instalación y ejecución
 
-1. Clonar el repositorio:
+1. **Clonar el repositorio**
 ```bash
-git clone [https://github.com/tu-usuario/tu-repo.git](https://github.com/dorisguerra68/moviestick.git)
+git clone https://github.com/dorisguerra68/moviestick.git
 
-2. npm install
-3.npm run dev
+2. **Instalar dependencias (Vite + React + JavaScript)**
+```bash
+npm install
+
+
+3. **Iniciar el servidor de desarrollo**
+```bash
+npm run dev
+
+
+```bash
 
